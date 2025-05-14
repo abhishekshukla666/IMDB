@@ -1,0 +1,401 @@
+{
+    "page": 2,
+    "results": [
+        {
+            "adult": false,
+            "backdrop_path": "/qAzYK4YPSWDc7aa4R43LcwRIAyb.jpg",
+            "genre_ids": [
+                28,
+                12,
+                878
+            ],
+            "id": 299537,
+            "original_language": "en",
+            "original_title": "Captain Marvel",
+            "overview": "The story follows Carol Danvers as she becomes one of the universe’s most powerful heroes when Earth is caught in the middle of a galactic war between two alien races. Set in the 1990s, Captain Marvel is an all-new adventure from a previously unseen period in the history of the Marvel Cinematic Universe.",
+            "popularity": 120.2694,
+            "poster_path": "/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg",
+            "release_date": "2019-03-06",
+            "title": "Captain Marvel",
+            "video": false,
+            "vote_average": 6.802,
+            "vote_count": 16012
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/bFmziv84NfEVEGTK8c6EVY3bxve.jpg",
+            "genre_ids": [
+                28,
+                80,
+                9648,
+                53
+            ],
+            "id": 1180906,
+            "original_language": "en",
+            "original_title": "Desert Dawn",
+            "overview": "A newly appointed small-town sheriff and his begrudging deputy get tangled up in a web of lies and corruption involving shady businessmen and the cartel while investigating the murder of a mysterious woman.",
+            "popularity": 109.9526,
+            "poster_path": "/S21BfLrJSD9njucBfY3CKqp8rD.jpg",
+            "release_date": "2025-05-15",
+            "title": "Desert Dawn",
+            "video": false,
+            "vote_average": 0.0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/nyZjhvcmeXcr8H2Xx6JzKEAxPph.jpg",
+            "genre_ids": [
+                27
+            ],
+            "id": 1136721,
+            "original_language": "en",
+            "original_title": "The Glenarma Tapes",
+            "overview": "In Spring 2020 when five students and two faculty members from the Mid Ulster College of Art go missing in a forest on the north coast of Ireland. What happened on the day they disappeared has remained a mystery - until now.",
+            "popularity": 120.6564,
+            "poster_path": "/m0kojZkP1vcK9F8XSWfw9haJHKz.jpg",
+            "release_date": "2024-04-02",
+            "title": "The Glenarma Tapes",
+            "video": false,
+            "vote_average": 7.111,
+            "vote_count": 9
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/AaABt75ZzfMGrscUR2seabz4PEX.jpg",
+            "genre_ids": [
+                28,
+                12,
+                14
+            ],
+            "id": 297762,
+            "original_language": "en",
+            "original_title": "Wonder Woman",
+            "overview": "An Amazon princess comes to the world of Man in the grips of the First World War to confront the forces of evil and bring an end to human conflict.",
+            "popularity": 98.4806,
+            "poster_path": "/v4ncgZjG2Zu8ZW5al1vIZTsSjqX.jpg",
+            "release_date": "2017-05-30",
+            "title": "Wonder Woman",
+            "video": false,
+            "vote_average": 7.217,
+            "vote_count": 20200
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/Zes06xI18u47pblwRGTtqRm0R8.jpg",
+            "genre_ids": [
+                28,
+                53,
+                80,
+                18
+            ],
+            "id": 1276073,
+            "original_language": "ja",
+            "original_title": "新幹線大爆破",
+            "overview": "When panic erupts on a Tokyo-bound bullet train that will explode if it slows below 100 kph, authorities race against time to save everyone on board.",
+            "popularity": 102.2618,
+            "poster_path": "/jmzxlDBwgvRbpPJzNQwizyn9UEn.jpg",
+            "release_date": "2025-04-23",
+            "title": "Bullet Train Explosion",
+            "video": false,
+            "vote_average": 6.885,
+            "vote_count": 149
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/bMdSmfI0qwpAkvhAL7sqpjmwgf4.jpg",
+            "genre_ids": [
+                878,
+                18
+            ],
+            "id": 335984,
+            "original_language": "en",
+            "original_title": "Blade Runner 2049",
+            "overview": "Thirty years after the events of the first film, a new blade runner, LAPD Officer K, unearths a long-buried secret that has the potential to plunge what's left of society into chaos. K's discovery leads him on a quest to find Rick Deckard, a former LAPD blade runner who has been missing for 30 years.",
+            "popularity": 89.6182,
+            "poster_path": "/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+            "release_date": "2017-10-04",
+            "title": "Blade Runner 2049",
+            "video": false,
+            "vote_average": 7.58,
+            "vote_count": 14100
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/dTGECn8He16tZeBHQTLf6rVydE8.jpg",
+            "genre_ids": [
+                80,
+                53,
+                18
+            ],
+            "id": 302946,
+            "original_language": "en",
+            "original_title": "The Accountant",
+            "overview": "As a math savant uncooks the books for a new client, the Treasury Department closes in on his activities and the body count starts to rise.",
+            "popularity": 96.7883,
+            "poster_path": "/fceheXB5fC4WrLVuWJ6OZv9FXYr.jpg",
+            "release_date": "2016-10-03",
+            "title": "The Accountant",
+            "video": false,
+            "vote_average": 7.1,
+            "vote_count": 6525
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/2CcMG34v4PCynvxwmBUwVtNqsKL.jpg",
+            "genre_ids": [
+                9648,
+                53
+            ],
+            "id": 1249213,
+            "original_language": "en",
+            "original_title": "Drop",
+            "overview": "Violet, a widowed mother on her first date in years, arrives at an upscale restaurant where she is relieved that her date, Henry, is more charming and handsome than she expected. But their chemistry begins to curdle as Violet begins being irritated and then terrorized by a series of anonymous drops to her phone.",
+            "popularity": 93.5279,
+            "poster_path": "/dS2S5lpfgRIRQOb7LDCjNsQqKjp.jpg",
+            "release_date": "2025-04-10",
+            "title": "Drop",
+            "video": false,
+            "vote_average": 6.555,
+            "vote_count": 263
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/zo8CIjJ2nfNOevqNajwMRO6Hwka.jpg",
+            "genre_ids": [
+                16,
+                12,
+                10751,
+                35
+            ],
+            "id": 1241982,
+            "original_language": "en",
+            "original_title": "Moana 2",
+            "overview": "After receiving an unexpected call from her wayfinding ancestors, Moana journeys alongside Maui and a new crew to the far seas of Oceania and into dangerous, long-lost waters for an adventure unlike anything she's ever faced.",
+            "popularity": 105.2321,
+            "poster_path": "/aLVkiINlIeCkcZIzb7XHzPYgO6L.jpg",
+            "release_date": "2024-11-21",
+            "title": "Moana 2",
+            "video": false,
+            "vote_average": 7.078,
+            "vote_count": 2327
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/vNUwK5P42m81uG57kKI1WxSZwIQ.jpg",
+            "genre_ids": [
+                35,
+                10749
+            ],
+            "id": 1403735,
+            "original_language": "te",
+            "original_title": "లైలా",
+            "overview": "Sonu Model, a renowned beautician from the old city, is forced to disguise himself as Laila, leading to a series of comedic, romantic, and action-packed events. Chaos ensues in this hilarious laugh riot",
+            "popularity": 104.3369,
+            "poster_path": "/l4gsNxFPGpzbq0D6QK1a8vO1lBz.jpg",
+            "release_date": "2025-02-14",
+            "title": "Laila",
+            "video": false,
+            "vote_average": 5.0,
+            "vote_count": 3
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/4eC0tsU9OxR3Adlo1yRJYUDraW9.jpg",
+            "genre_ids": [
+                28,
+                53
+            ],
+            "id": 1092899,
+            "original_language": "en",
+            "original_title": "The Siege",
+            "overview": "International assassin Walker is compromised during a mission and sent to a reassignment center for a new identity. During his stay at the facility, a ruthless assault team storms the compound searching for someone their boss has lost. Walker begrudgingly falls in with skilled hitwoman Elda and her mysterious ward Juliet in order to survive the night.",
+            "popularity": 90.6336,
+            "poster_path": "/hVh4hMzkXNLnScudbid6hDvjMPk.jpg",
+            "release_date": "2023-03-10",
+            "title": "The Siege",
+            "video": false,
+            "vote_average": 5.448,
+            "vote_count": 48
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/1YMrOtrW7b4pL2lfD8UciZPOJGs.jpg",
+            "genre_ids": [
+                18,
+                53,
+                9648
+            ],
+            "id": 974576,
+            "original_language": "en",
+            "original_title": "Conclave",
+            "overview": "After the unexpected death of the Pope, Cardinal Lawrence is tasked with managing the covert and ancient ritual of electing a new one. Sequestered in the Vatican with the Catholic Church’s most powerful leaders until the process is complete, Lawrence finds himself at the center of a conspiracy that could lead to its downfall.",
+            "popularity": 112.7404,
+            "poster_path": "/l4WXg5oQPK6GVlISKQNIUGb8rKJ.jpg",
+            "release_date": "2024-10-25",
+            "title": "Conclave",
+            "video": false,
+            "vote_average": 7.199,
+            "vote_count": 2354
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/iznPd7PLnCBA1G50M4DuA9wvCIy.jpg",
+            "genre_ids": [
+                35
+            ],
+            "id": 1307520,
+            "original_language": "es",
+            "original_title": "La más fan",
+            "overview": "Canceled in Hollywood, star Lana Cruz heads to her hometown for a comeback. Enter Polly, her fan-turned-frenemy. Can Lana dodge drama and reclaim her fame?",
+            "popularity": 86.5228,
+            "poster_path": "/wgUmsekYPOt9ZQ8ero91qRnmhQY.jpg",
+            "release_date": "2025-05-01",
+            "title": "The Biggest Fan",
+            "video": false,
+            "vote_average": 5.1,
+            "vote_count": 12
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/sNx1A3822kEbqeUxvo5A08o4N7o.jpg",
+            "genre_ids": [
+                28,
+                35,
+                53
+            ],
+            "id": 1195506,
+            "original_language": "en",
+            "original_title": "Novocaine",
+            "overview": "When the girl of his dreams is kidnapped, everyman Nate turns his inability to feel pain into an unexpected strength in his fight to get her back.",
+            "popularity": 85.9556,
+            "poster_path": "/xmMHGz9dVRaMY6rRAlEX4W0Wdhm.jpg",
+            "release_date": "2025-03-12",
+            "title": "Novocaine",
+            "video": false,
+            "vote_average": 6.921,
+            "vote_count": 700
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/k32XKMjmXMGeydykD32jfER3BVI.jpg",
+            "genre_ids": [
+                28,
+                9648,
+                18
+            ],
+            "id": 1045938,
+            "original_language": "en",
+            "original_title": "G20",
+            "overview": "After the G20 Summit is overtaken by terrorists, President Danielle Sutton must bring all her statecraft and military experience to defend her family and her fellow leaders.",
+            "popularity": 82.1321,
+            "poster_path": "/wv6oWAleCJZUk5htrGg413t3GCy.jpg",
+            "release_date": "2025-04-10",
+            "title": "G20",
+            "video": false,
+            "vote_average": 6.57,
+            "vote_count": 459
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/oHPoF0Gzu8xwK4CtdXDaWdcuZxZ.jpg",
+            "genre_ids": [
+                12,
+                10751,
+                16
+            ],
+            "id": 762509,
+            "original_language": "en",
+            "original_title": "Mufasa: The Lion King",
+            "overview": "Mufasa, a cub lost and alone, meets a sympathetic lion named Taka, the heir to a royal bloodline. The chance meeting sets in motion an expansive journey of a group of misfits searching for their destiny.",
+            "popularity": 81.9831,
+            "poster_path": "/lurEK87kukWNaHd0zYnsi3yzJrs.jpg",
+            "release_date": "2024-12-18",
+            "title": "Mufasa: The Lion King",
+            "video": false,
+            "vote_average": 7.411,
+            "vote_count": 2069
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/rdxdvXQGqCj2Vb7SvTL8gdxlSzI.jpg",
+            "genre_ids": [
+                80,
+                53,
+                28
+            ],
+            "id": 870028,
+            "original_language": "en",
+            "original_title": "The Accountant²",
+            "overview": "When an old acquaintance is murdered, Wolff is compelled to solve the case. Realizing more extreme measures are necessary, Wolff recruits his estranged and highly lethal brother, Brax, to help. In partnership with Marybeth Medina, they uncover a deadly conspiracy, becoming targets of a ruthless network of killers who will stop at nothing to keep their secrets buried.",
+            "popularity": 74.7749,
+            "poster_path": "/kMDUS7VmFhb2coRfVBoGLR8ADBt.jpg",
+            "release_date": "2025-04-23",
+            "title": "The Accountant²",
+            "video": false,
+            "vote_average": 7.237,
+            "vote_count": 139
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/zOpe0eHsq0A2NvNyBbtT6sj53qV.jpg",
+            "genre_ids": [
+                28,
+                878,
+                35,
+                10751
+            ],
+            "id": 939243,
+            "original_language": "en",
+            "original_title": "Sonic the Hedgehog 3",
+            "overview": "Sonic, Knuckles, and Tails reunite against a powerful new adversary, Shadow, a mysterious villain with powers unlike anything they have faced before. With their abilities outmatched in every way, Team Sonic must seek out an unlikely alliance in hopes of stopping Shadow and protecting the planet.",
+            "popularity": 76.1671,
+            "poster_path": "/d8Ryb8AunYAuycVKDp5HpdWPKgC.jpg",
+            "release_date": "2024-12-19",
+            "title": "Sonic the Hedgehog 3",
+            "video": false,
+            "vote_average": 7.725,
+            "vote_count": 2513
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/q2DZEtjm6ZXqy43nnWVzkP59EBk.jpg",
+            "genre_ids": [
+                18
+            ],
+            "id": 1125880,
+            "original_language": "pl",
+            "original_title": "Rój",
+            "overview": "A secluded island somewhere on a seas of the Northern Europe. A family of four has lived here for over ten years, perfecting the art of survival. They had moved onto an island to escape a falling civilization, to live in freedom, close to nature.  But, things can’t be solved by simply escaping the world, and problems arise when the Mother becomes pregnant again. Moreover, Winter is coming. It seems the only solution is in leaving the island, but this meets with stern dissent from the Father, who sees the place as the only safe haven on earth. Will the others find the courage to stand up to the Father? Can their family survive what comes next?",
+            "popularity": 60.5704,
+            "poster_path": "/6Cmu2RgUd7u5Bk8AaKZktLbxMbW.jpg",
+            "release_date": "2023-05-11",
+            "title": "Swarm",
+            "video": false,
+            "vote_average": 4.5,
+            "vote_count": 2
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/hiKmpZMGZsrkA3cdce8a7Dpos1j.jpg",
+            "genre_ids": [
+                35,
+                53,
+                18
+            ],
+            "id": 496243,
+            "original_language": "ko",
+            "original_title": "기생충",
+            "overview": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
+            "popularity": 61.3,
+            "poster_path": "/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+            "release_date": "2019-05-30",
+            "title": "Parasite",
+            "video": false,
+            "vote_average": 8.5,
+            "vote_count": 19010
+        }
+    ],
+    "total_pages": 50197,
+    "total_results": 1003939
+}

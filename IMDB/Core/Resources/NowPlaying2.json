@@ -1,0 +1,404 @@
+{
+    "dates": {
+        "maximum": "2025-05-14",
+        "minimum": "2025-04-02"
+    },
+    "page": 2,
+    "results": [
+        {
+            "adult": false,
+            "backdrop_path": "/rdxdvXQGqCj2Vb7SvTL8gdxlSzI.jpg",
+            "genre_ids": [
+                80,
+                53,
+                28
+            ],
+            "id": 870028,
+            "original_language": "en",
+            "original_title": "The Accountant²",
+            "overview": "When an old acquaintance is murdered, Wolff is compelled to solve the case. Realizing more extreme measures are necessary, Wolff recruits his estranged and highly lethal brother, Brax, to help. In partnership with Marybeth Medina, they uncover a deadly conspiracy, becoming targets of a ruthless network of killers who will stop at nothing to keep their secrets buried.",
+            "popularity": 83.1512,
+            "poster_path": "/kMDUS7VmFhb2coRfVBoGLR8ADBt.jpg",
+            "release_date": "2025-04-23",
+            "title": "The Accountant²",
+            "video": false,
+            "vote_average": 7.239,
+            "vote_count": 134
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/zksO4lVnRKRoaSYzh2EDn2Z3Pel.jpg",
+            "genre_ids": [
+                37,
+                28
+            ],
+            "id": 1293286,
+            "original_language": "en",
+            "original_title": "Gunslingers",
+            "overview": "When the most wanted man in America surfaces in a small Kentucky town, his violent history -- and a blood-thirsty mob seeking vengeance and a king’s ransom -- soon follow. As brothers face off against one another and bullets tear the town to shreds, this lightning-fast gunslinger makes his enemies pay the ultimate price for their greed.",
+            "popularity": 64.1346,
+            "poster_path": "/O7REXWPANWXvX2jhQydHjAq2DV.jpg",
+            "release_date": "2025-04-11",
+            "title": "Gunslingers",
+            "video": false,
+            "vote_average": 6.429,
+            "vote_count": 49
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/sQa299yggIkxfwKJFgzYwDdsC9t.jpg",
+            "genre_ids": [
+                878,
+                27,
+                53
+            ],
+            "id": 931349,
+            "original_language": "en",
+            "original_title": "Ash",
+            "overview": "A woman wakes up on a distant planet and finds the crew of her space station viciously killed. Her investigation into what happened sets in motion a terrifying chain of events.",
+            "popularity": 56.5268,
+            "poster_path": "/nRa8B3tQCUK6pVwjasIyQehbvpF.jpg",
+            "release_date": "2025-03-20",
+            "title": "Ash",
+            "video": false,
+            "vote_average": 5.4,
+            "vote_count": 202
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/3lEV4CoKoeT2cZ4fbKEJugZcw6Z.jpg",
+            "genre_ids": [
+                27,
+                9648
+            ],
+            "id": 1244944,
+            "original_language": "en",
+            "original_title": "The Woman in the Yard",
+            "overview": "In the aftermath of her husband's death, widow Ramona's struggle to raise her two kids is hindered by the arrival of a mysterious woman with supernatural abilities.",
+            "popularity": 65.0719,
+            "poster_path": "/n0WS2TsNcS6dtaZKzxipyO7LuCJ.jpg",
+            "release_date": "2025-03-27",
+            "title": "The Woman in the Yard",
+            "video": false,
+            "vote_average": 6.2,
+            "vote_count": 141
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/6GGsUgmef5MIfJnnp2fGvkFWRg6.jpg",
+            "genre_ids": [
+                10749,
+                35,
+                18
+            ],
+            "id": 1059073,
+            "original_language": "en",
+            "original_title": "Winter Spring Summer or Fall",
+            "overview": "Remi and Barnes, two very different teenagers, meet by chance in the winter of their senior year, then spend four  days together over the course of a year that will change their lives forever.",
+            "popularity": 53.8138,
+            "poster_path": "/mEPi5ISa5RmzpzeDfwkhX0CcNsf.jpg",
+            "release_date": "2024-12-27",
+            "title": "Winter Spring Summer or Fall",
+            "video": false,
+            "vote_average": 7.318,
+            "vote_count": 88
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/7wKnf6ILtRmKXV8eJWk0P6ZXnQ.jpg",
+            "genre_ids": [
+                27,
+                9648
+            ],
+            "id": 574475,
+            "original_language": "en",
+            "original_title": "Final Destination Bloodlines",
+            "overview": "Plagued by a violent recurring nightmare, college student Stefanie heads home to track down the one person who might be able to break the cycle and save her family from the grisly demise that inevitably awaits them all.",
+            "popularity": 59.5062,
+            "poster_path": "/cAoktVUBhGyULRoxV6mZ2LB3x7I.jpg",
+            "release_date": "2025-05-09",
+            "title": "Final Destination Bloodlines",
+            "video": false,
+            "vote_average": 7.4,
+            "vote_count": 5
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/3xKJ0nyUTlySmMBCpOcsuSnFPI1.jpg",
+            "genre_ids": [
+                27,
+                9648
+            ],
+            "id": 1232546,
+            "original_language": "en",
+            "original_title": "Until Dawn",
+            "overview": "One year after her sister Melanie mysteriously disappeared, Clover and her friends head into the remote valley where she vanished in search of answers. Exploring an abandoned visitor center, they find themselves stalked by a masked killer and horrifically murdered one by one...only to wake up and find themselves back at the beginning of the same evening.",
+            "popularity": 53.8724,
+            "poster_path": "/6O9nkcmZBymDXtxOGJmulqcxJdv.jpg",
+            "release_date": "2025-04-23",
+            "title": "Until Dawn",
+            "video": false,
+            "vote_average": 6.481,
+            "vote_count": 135
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/hwlyY7LJdEFbCPaGNXiskKKmJ5X.jpg",
+            "genre_ids": [
+                28,
+                53
+            ],
+            "id": 1126166,
+            "original_language": "en",
+            "original_title": "Flight Risk",
+            "overview": "A U.S. Marshal escorts a government witness to trial after he's accused of getting involved with a mob boss, only to discover that the pilot who is transporting them is also a hitman sent to assassinate the informant. After they subdue him, they're forced to fly together after discovering that there are others attempting to eliminate them.",
+            "popularity": 53.6901,
+            "poster_path": "/q0bCG4NX32iIEsRFZqRtuvzNCyZ.jpg",
+            "release_date": "2025-01-22",
+            "title": "Flight Risk",
+            "video": false,
+            "vote_average": 6.116,
+            "vote_count": 672
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/kXxriYfAWtMJNHGHVYr09c37L07.jpg",
+            "genre_ids": [
+                53,
+                878
+            ],
+            "id": 650033,
+            "original_language": "ru",
+            "original_title": "Свободное падение",
+            "overview": "In the near future, humanity has successfully colonized space and build a giant orbital station \"Delta\". Max is a repairman working on the station. After a disaster caused by a proton storm, he is left alone without his crew members, drifting into space. His space suit is broken, he is exhausted, and he lacks communication with people. But suddenly a dispatcher named Anna comes to help. She is the only one who can guide Max through difficulties and get him to the station. Max has to risk everything to save his life, but he has no idea what Anna is up to.",
+            "popularity": 52.5457,
+            "poster_path": "/tB66c6dnu9dG60mta8TF8zmeGJn.jpg",
+            "release_date": "2025-05-14",
+            "title": "Free Fall",
+            "video": false,
+            "vote_average": 7.5,
+            "vote_count": 2
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/qUc0Hol3eP74dbW4YyqT6oRLYgT.jpg",
+            "genre_ids": [
+                878,
+                35,
+                12
+            ],
+            "id": 696506,
+            "original_language": "en",
+            "original_title": "Mickey 17",
+            "overview": "Unlikely hero Mickey Barnes finds himself in the extraordinary circumstance of working for an employer who demands the ultimate commitment to the job… to die, for a living.",
+            "popularity": 45.8816,
+            "poster_path": "/edKpE9B5qN3e559OuMCLZdW1iBZ.jpg",
+            "release_date": "2025-02-28",
+            "title": "Mickey 17",
+            "video": false,
+            "vote_average": 6.899,
+            "vote_count": 1851
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/jl2YIADk391yc6Qjy9JhgCRkHJk.jpg",
+            "genre_ids": [
+                16,
+                18,
+                35
+            ],
+            "id": 1064486,
+            "original_language": "en",
+            "original_title": "Memoir of a Snail",
+            "overview": "Forcibly separated from her twin brother when they are orphaned, a melancholic misfit learns how to find confidence within herself amid the clutter of misfortunes and everyday life.",
+            "popularity": 44.9865,
+            "poster_path": "/57AgZv1ITeBLShiNdchZ5153evs.jpg",
+            "release_date": "2024-10-17",
+            "title": "Memoir of a Snail",
+            "video": false,
+            "vote_average": 8.04,
+            "vote_count": 471
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/cq9N64ucEtfIc3eMxNr1VzY9LH9.jpg",
+            "genre_ids": [
+                18
+            ],
+            "id": 37799,
+            "original_language": "en",
+            "original_title": "The Social Network",
+            "overview": "In 2003, Harvard undergrad and computer programmer Mark Zuckerberg begins work on a new concept that eventually turns into the global social network known as Facebook. Six years later, Mark is one of the youngest billionaires ever, but his unprecedented success leads to both personal and legal complications when he ends up on the receiving end of two lawsuits, one involving his former friend.",
+            "popularity": 36.2664,
+            "poster_path": "/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg",
+            "release_date": "2010-10-01",
+            "title": "The Social Network",
+            "video": false,
+            "vote_average": 7.37,
+            "vote_count": 12409
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/r4X2xRrWleVgx0kahP27xRmm3ia.jpg",
+            "genre_ids": [
+                27,
+                53
+            ],
+            "id": 1083968,
+            "original_language": "en",
+            "original_title": "Locked",
+            "overview": "When Eddie breaks into a luxury SUV, he steps into a deadly trap set by William, a self-proclaimed vigilante delivering his own brand of twisted justice. With no means of escape, Eddie must fight to survive in a ride where escape is an illusion, survival is a nightmare, and justice shifts into high gear.",
+            "popularity": 46.2646,
+            "poster_path": "/hhkiqXpfpufwxVrdSftzeKIANl3.jpg",
+            "release_date": "2025-03-20",
+            "title": "Locked",
+            "video": false,
+            "vote_average": 6.215,
+            "vote_count": 114
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/b3mdmjYTEL70j7nuXATUAD9qgu4.jpg",
+            "genre_ids": [
+                16,
+                14,
+                12
+            ],
+            "id": 823219,
+            "original_language": "lv",
+            "original_title": "Straume",
+            "overview": "A solitary cat, displaced by a great flood, finds refuge on a boat with various species and must navigate the challenges of adapting to a transformed world together.",
+            "popularity": 42.5125,
+            "poster_path": "/imKSymKBK7o73sajciEmndJoVkR.jpg",
+            "release_date": "2024-08-29",
+            "title": "Flow",
+            "video": false,
+            "vote_average": 8.2,
+            "vote_count": 1904
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/xb9wpY31SeVZbfkevYuolhfV63w.jpg",
+            "genre_ids": [
+                10751,
+                14
+            ],
+            "id": 447273,
+            "original_language": "en",
+            "original_title": "Snow White",
+            "overview": "Following the benevolent King's disappearance, the Evil Queen dominated the once fair land with a cruel streak. Princess Snow White flees the castle when the Queen, in her jealousy over Snow White's inner beauty, tries to kill her. Deep into the dark woods, she stumbles upon seven magical dwarves and a young bandit named Jonathan. Together, they strive to survive the Queen's relentless pursuit and aspire to take back the kingdom.",
+            "popularity": 38.4766,
+            "poster_path": "/oLxWocqheC8XbXbxqJ3x422j9PW.jpg",
+            "release_date": "2025-03-19",
+            "title": "Snow White",
+            "video": false,
+            "vote_average": 4.5,
+            "vote_count": 612
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/yOn8w3aGd6Rf9JYki7XaC9ZiyDg.jpg",
+            "genre_ids": [
+                18,
+                36,
+                53,
+                80,
+                10752,
+                28
+            ],
+            "id": 919207,
+            "original_language": "ko",
+            "original_title": "서울의 봄",
+            "overview": "After the assassination of President Park, martial law has been declared. A coup d'état bursts out by DefenseSecurity Commander Chun Doo-gwang and a private band of officers following him. Capital Defense Commander Lee Tae-shin, an obstinate soldier who believes the military should not take political actions, fights against Chun Doo-gwang to stop him. The conflict between the two grows while military leaders are holding their decision and Defense Minister is gone. In the midst of chaos, the spring of Seoul that everyone longed for heads to unexpected direction.",
+            "popularity": 45.3603,
+            "poster_path": "/vy14tKxsbJYdDyFl6kQuVkK2s44.jpg",
+            "release_date": "2023-11-22",
+            "title": "12.12: The Day",
+            "video": false,
+            "vote_average": 7.5,
+            "vote_count": 110
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/yMoEGh8kDEwqsoJumnQLwFJ9V6h.jpg",
+            "genre_ids": [
+                53,
+                28
+            ],
+            "id": 1087891,
+            "original_language": "en",
+            "original_title": "The Amateur",
+            "overview": "After his life is turned upside down when his wife is killed in a London terrorist attack, a brilliant but introverted CIA decoder takes matters into his own hands when his supervisors refuse to take action.",
+            "popularity": 38.1481,
+            "poster_path": "/SNEoUInCa5fAgwuEBMIMBGvkkh.jpg",
+            "release_date": "2025-04-09",
+            "title": "The Amateur",
+            "video": false,
+            "vote_average": 6.661,
+            "vote_count": 236
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/wmqpE7p2dUCEgCnovuovoNXaCXr.jpg",
+            "genre_ids": [
+                27,
+                14,
+                53,
+                9648,
+                28
+            ],
+            "id": 1353117,
+            "original_language": "en",
+            "original_title": "Home Sweet Home: Rebirth",
+            "overview": "When a city is overrun with a demonically-possessed crowd, a cop must find the source of evil to save his family.",
+            "popularity": 36.481,
+            "poster_path": "/9rCBCm9cyI4JfLEhx3EncyncMR3.jpg",
+            "release_date": "2025-03-20",
+            "title": "Home Sweet Home: Rebirth",
+            "video": false,
+            "vote_average": 6.342,
+            "vote_count": 57
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/bA4Io3xv46oEyP4O51uU0EKbluF.jpg",
+            "genre_ids": [
+                28,
+                80
+            ],
+            "id": 995926,
+            "original_language": "ko",
+            "original_title": "베테랑 2",
+            "overview": "The veteran detective Seo Do-cheol and his team at Major Crimes, relentless in their pursuit of criminals, join forces with rookie cop Park Sun-woo to track down a serial killer who has plunged the nation into turmoil.",
+            "popularity": 34.1067,
+            "poster_path": "/gAtP0usArK5gVOBObnsENKLwML8.jpg",
+            "release_date": "2024-09-13",
+            "title": "I, the Executioner",
+            "video": false,
+            "vote_average": 7.0,
+            "vote_count": 62
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/kpWusrV8GePdx42GLJjZ7RJhkfz.jpg",
+            "genre_ids": [
+                27,
+                18,
+                53
+            ],
+            "id": 1140535,
+            "original_language": "en",
+            "original_title": "Presence",
+            "overview": "A couple and their children move into a seemingly normal suburban home. When strange events occur, they begin to believe there is something else in the house with them. The presence is about to disrupt their lives in unimaginable ways.",
+            "popularity": 34.1454,
+            "poster_path": "/hZ8dTeBzigV5SVgwG1ikSROAFiS.jpg",
+            "release_date": "2025-01-16",
+            "title": "Presence",
+            "video": false,
+            "vote_average": 6.023,
+            "vote_count": 302
+        }
+    ],
+    "total_pages": 257,
+    "total_results": 5136
+}

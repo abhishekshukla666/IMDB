@@ -1,0 +1,15 @@
+{
+  "originHash" : "8770220caaba1fa062c2fa020512fa4534f2c5d9c1d61857fe9a26d36a6cd81e",
+  "pins" : [
+    {
+      "identity" : "ctrating2",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/abhishekshukla666/CTRating2/",
+      "state" : {
+        "revision" : "370d8025bfbb81a39f79b5858cb9c7e0d84c640b",
+        "version" : "1.0.13"
+      }
+    }
+  ],
+  "version" : 3
+}
