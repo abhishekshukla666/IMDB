@@ -11,6 +11,8 @@ enum IMDBEndPoint {
     case nowPlaying(page: String)
     case popular(page: String)
     case upcoming(page: String)
+    case topRated(page: String)
+    case details(id: Int)
 }
 
 extension IMDBEndPoint: EndPoint {
@@ -26,30 +28,37 @@ extension IMDBEndPoint: EndPoint {
             return "3/movie/popular"
         case .upcoming:
             return "3/movie/upcoming"
+        case .topRated:
+            return "3/movie/top_rated"
+        case .details(let id):
+            return "3/movie/\(id)"
         }
         
     }
 
+    fileprivate func willPrepareQueryItems(_ page: String) -> [URLQueryItem]? {
+        var queryItems: [URLQueryItem] = .init()
+        queryItems.append(.init(name: "language", value: "en-US"))
+        queryItems.append(.init(name: "api_key", value: "f1903be2b881067835c39fa6f8990a95"))
+        if !page.isEmpty {
+            queryItems.append(URLQueryItem(name: "page", value: page))
+            
+        }
+        return queryItems
+    }
+    
     var queryItems: [URLQueryItem]? {
         switch self {
         case .nowPlaying(page: let page):
-            return [
-                .init(name: "language", value: "en-US"),
-                .init(name: "page", value: page),
-                .init(name: "api_key", value: "f1903be2b881067835c39fa6f8990a95")
-            ]
+            return willPrepareQueryItems(page)
         case .popular(let page):
-            return [
-                .init(name: "language", value: "en-US"),
-                .init(name: "page", value: page),
-                .init(name: "api_key", value: "f1903be2b881067835c39fa6f8990a95")
-            ]
+            return willPrepareQueryItems(page)
         case .upcoming(let page):
-            return [
-                .init(name: "language", value: "en-US"),
-                .init(name: "page", value: page),
-                .init(name: "api_key", value: "f1903be2b881067835c39fa6f8990a95")
-            ]
+            return willPrepareQueryItems(page)
+        case .topRated(page: let page):
+            return willPrepareQueryItems(page)
+        case .details:
+            return willPrepareQueryItems("")
         }
     }
     

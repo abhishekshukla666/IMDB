@@ -10,7 +10,7 @@ import Foundation
 
 public typealias BodyType = Any
 
-let accessToken = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmMTkwM2JlMmI4ODEwNjc4MzVjMzlmYTZmODk5MGE5NSIsIm5iZiI6MTc0NjI2NDE0OC42OTgsInN1YiI6IjY4MTVlMDU0YzM0ZDE4Y2FlYzkxMmU3YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.I3S7yVP4rGi9bmCuUheVvpxa5bpq0_W6_BhqkdiG0yI"
+let accessToken = Bundle.infoPlistValue(forKey: "accessToken")
 
 public protocol EndPoint {
     var host: String { get }

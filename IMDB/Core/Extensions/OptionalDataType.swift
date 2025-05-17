@@ -67,7 +67,7 @@ extension OptionalDataType: Hashable {
 }
 
 extension OptionalDataType {
-    func getStringValue() -> String {
+    func toString() -> String {
         switch self {
         case .intValue(let intValue):
             return String(intValue)
@@ -80,7 +80,7 @@ extension OptionalDataType {
             return "false"
         }
     }
-    func getDoubleValue() -> Double {
+    func toDouble() -> Double {
         switch self {
         case .intValue(let intValue):
             return Double(intValue)

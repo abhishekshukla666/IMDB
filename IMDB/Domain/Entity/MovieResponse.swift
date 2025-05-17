@@ -21,7 +21,7 @@ struct MovieResponse: Decodable {
 }
 
 // MARK: - Result
-struct Movie: Decodable, Identifiable, Hashable {
+struct Movie: Codable, Identifiable, Hashable {
     
 //    let adult: Bool
     let backdropPath: OptionalDataType?
@@ -31,7 +31,9 @@ struct Movie: Decodable, Identifiable, Hashable {
     let originalTitle: OptionalDataType?
     let overview: OptionalDataType?
 //    let popularity: Double
-    let posterPath, releaseDate, title: OptionalDataType
+    let posterPath: OptionalDataType
+    let releaseDate: OptionalDataType
+    let title: OptionalDataType
 //    let video: Bool
     let voteAverage: OptionalDataType?
     let voteCount: OptionalDataType?

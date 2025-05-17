@@ -10,8 +10,19 @@
 		51568B2B2DCDD5D8002CF154 /* CTRating2 in Frameworks */ = {isa = PBXBuildFile; productRef = 51568B2A2DCDD5D8002CF154 /* CTRating2 */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5179B1BE2DD5BDD2008D62E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 515689C62DC619BC002CF154 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 515689CD2DC619BC002CF154;
+			remoteInfo = IMDB;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		515689CE2DC619BC002CF154 /* IMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5179B1BA2DD5BDD2008D62E3 /* IMDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -33,6 +44,11 @@
 			path = IMDB;
 			sourceTree = "<group>";
 		};
+		5179B1BB2DD5BDD2008D62E3 /* IMDBTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = IMDBTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +60,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5179B1B72DD5BDD2008D62E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -51,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				515689D02DC619BC002CF154 /* IMDB */,
+				5179B1BB2DD5BDD2008D62E3 /* IMDBTests */,
 				515689CF2DC619BC002CF154 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				515689CE2DC619BC002CF154 /* IMDB.app */,
+				5179B1BA2DD5BDD2008D62E3 /* IMDBTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +114,29 @@
 			productReference = 515689CE2DC619BC002CF154 /* IMDB.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5179B1B92DD5BDD2008D62E3 /* IMDBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5179B1C02DD5BDD2008D62E3 /* Build configuration list for PBXNativeTarget "IMDBTests" */;
+			buildPhases = (
+				5179B1B62DD5BDD2008D62E3 /* Sources */,
+				5179B1B72DD5BDD2008D62E3 /* Frameworks */,
+				5179B1B82DD5BDD2008D62E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5179B1BF2DD5BDD2008D62E3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5179B1BB2DD5BDD2008D62E3 /* IMDBTests */,
+			);
+			name = IMDBTests;
+			packageProductDependencies = (
+			);
+			productName = IMDBTests;
+			productReference = 5179B1BA2DD5BDD2008D62E3 /* IMDBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -101,6 +149,10 @@
 				TargetAttributes = {
 					515689CD2DC619BC002CF154 = {
 						CreatedOnToolsVersion = 16.3;
+					};
+					5179B1B92DD5BDD2008D62E3 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 515689CD2DC619BC002CF154;
 					};
 				};
 			};
@@ -122,12 +174,20 @@
 			projectRoot = "";
 			targets = (
 				515689CD2DC619BC002CF154 /* IMDB */,
+				5179B1B92DD5BDD2008D62E3 /* IMDBTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		515689CC2DC619BC002CF154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5179B1B82DD5BDD2008D62E3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -144,7 +204,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5179B1B62DD5BDD2008D62E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5179B1BF2DD5BDD2008D62E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 515689CD2DC619BC002CF154 /* IMDB */;
+			targetProxy = 5179B1BE2DD5BDD2008D62E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		515689D72DC619BE002CF154 /* Debug */ = {
@@ -326,6 +401,42 @@
 			};
 			name = Release;
 		};
+		5179B1C12DD5BDD2008D62E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LL58DR37V3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shukla.IMDBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IMDB.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IMDB";
+			};
+			name = Debug;
+		};
+		5179B1C22DD5BDD2008D62E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LL58DR37V3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shukla.IMDBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IMDB.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/IMDB";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -343,6 +454,15 @@
 			buildConfigurations = (
 				515689DA2DC619BE002CF154 /* Debug */,
 				515689DB2DC619BE002CF154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5179B1C02DD5BDD2008D62E3 /* Build configuration list for PBXNativeTarget "IMDBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5179B1C12DD5BDD2008D62E3 /* Debug */,
+				5179B1C22DD5BDD2008D62E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

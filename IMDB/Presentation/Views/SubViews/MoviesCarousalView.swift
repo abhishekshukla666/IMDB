@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MoviesCarousalView: View {
     
+    @EnvironmentObject var navigationPath: NavigationManager
     let headerTitle: String
     let movies: [Movie]
     
@@ -20,10 +21,12 @@ struct MoviesCarousalView: View {
         ) {
             ScrollView(.horizontal) {
                 LazyHStack(alignment: .top, pinnedViews: [.sectionHeaders]) {
-                    ForEach(movies) { nowPlayingMovie in
-                        NowPlayingCardView(nowPlayingMovie: nowPlayingMovie)
+                    ForEach(movies) { movie in
+                        MovieCardView(nowPlayingMovie: movie)
                             .frame(width: 150, height: 310)
-                        
+                            .onTapGesture {
+                                navigationPath.push(.movieDetailView(movieId: movie.id))
+                            }
                     }
                 }
             }
@@ -37,6 +40,7 @@ struct MoviesCarousalView: View {
         HStack {
             Text(headerTitle)
                 .font(.headline)
+                .padding()
             
             Spacer()
             Button {
@@ -47,9 +51,8 @@ struct MoviesCarousalView: View {
                     .fontWeight(.bold)
                     .foregroundStyle(.link)
             }
-            
+            .padding()
         }
-        .padding(.horizontal, 20)
     }
 }
 

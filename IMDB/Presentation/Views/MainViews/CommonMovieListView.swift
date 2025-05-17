@@ -12,6 +12,8 @@ struct CommonMovieListView: View {
     @EnvironmentObject var path: NavigationManager
     @StateObject var viewModel: CommonMovieListViewModel = .init(movieService: MoviesService())
     let movieListType: MovieListType
+    
+    @State private var searchableText: String = ""
 
     init(movieListType: MovieListType) {
         self.movieListType = movieListType
@@ -20,11 +22,12 @@ struct CommonMovieListView: View {
     var body: some View {
         ScrollView {
             LazyVStack {
-                ForEach(viewModel.movies, id: \.self) { movie in
+                ForEach(viewModel.filteredMovies, id: \.self) { movie in
                     MovieView(movie: movie)
                         .onAppear {
                             loadMoreIfNeeded(movie)
                         }
+                    Divider()
                 }
                 
                 if viewModel.isLoading {
@@ -38,12 +41,35 @@ struct CommonMovieListView: View {
                     await viewModel.getMovies(movieListType)
                 }
             }
-//            .onChange(of: viewModel.movies.count) { (oldValue, newValue) in
-//                loadMoreIfNeeded()
-//            }
         }
         .navigationTitle(movieListType == .nowPlaying ? "Now Playing" : "Popular")
         .navigationBarTitleDisplayMode(.inline)
+        .searchable(text: $searchableText, prompt: "Search Movies")
+        .onChange(of: searchableText) { (_, newValue) in
+            if newValue.isEmpty {
+                viewModel.filteredMovies = viewModel.movies
+            } else {
+                viewModel.filteredMovies = viewModel.movies
+                    .filter {
+                        $0.title
+                            .toString()
+                            .localizedStandardContains(newValue.localizedLowercase)
+                    }
+            }
+        }
+    }
+    
+    func navigationTitle() -> String {
+        switch movieListType {
+            case .nowPlaying:
+            return "Now Playing"
+        case .popular:
+            return "Popular"
+        case .upcoming:
+            return "Upcoming"
+        case .topRated:
+            return "Top Rated"
+        }
     }
     
     func loadMoreIfNeeded(_ movie: Movie) {
@@ -53,4 +79,9 @@ struct CommonMovieListView: View {
             }
         }
     }
+}
+
+#Preview {
+    CommonMovieListView(movieListType: .nowPlaying)
+        .environmentObject(CommonMovieListViewModel(movieService: MoviesService()))
 }

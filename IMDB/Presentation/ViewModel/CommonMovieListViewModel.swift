@@ -11,11 +11,13 @@ enum MovieListType {
     case nowPlaying
     case popular
     case upcoming
+    case topRated
 }
 class CommonMovieListViewModel: ObservableObject {
     
     private(set) var movieResponse: MovieResponse?
     @Published var movies: [Movie] = []
+    @Published var filteredMovies: [Movie] = []
     @Published var isLoading: Bool = false
     @Published var hasError: Bool = false
 
@@ -28,8 +30,14 @@ class CommonMovieListViewModel: ObservableObject {
         self.movieService = movieService
     }
     
-    fileprivate func handleMovieResponse(_ movieResponse: MovieResponse) {
-        self.movies.append(contentsOf: movieResponse.movies)
+    fileprivate func handleMovieResponse(_ movieResponse: MovieResponse?) {
+        guard let movieResponse else {
+            hasError = true
+            isLoading = false
+            return
+        }
+        self.movies.append(contentsOf: movieResponse.movies.sortByDate())
+        filteredMovies = movies
         isLoading = false
         currentPage += 1
         self.canLoadMorePages = movieResponse.movies.count < movieResponse.totalPages
@@ -42,7 +50,7 @@ class CommonMovieListViewModel: ObservableObject {
         switch movieListType {
         case .nowPlaying:
             do {
-                let movieResponse = try await movieService.getNowPlayingMovies(page: String(currentPage))
+                movieResponse = try await movieService.getNowPlayingMovies(page: String(currentPage))
                 handleMovieResponse(movieResponse)
             } catch {
                 isLoading = false
@@ -51,9 +59,7 @@ class CommonMovieListViewModel: ObservableObject {
         case .popular:
             do {
                 movieResponse = try await movieService.getPopularMovies(page: String(currentPage))
-                if let movieResponse {
-                    handleMovieResponse(movieResponse)
-                }
+                handleMovieResponse(movieResponse)
             } catch {
                 isLoading = false
                 print(error.localizedDescription)
@@ -62,9 +68,16 @@ class CommonMovieListViewModel: ObservableObject {
         case .upcoming:
             do {
                 movieResponse = try await movieService.getUpcomingMovies(page: String(currentPage))
-                if let movieResponse {
-                    handleMovieResponse(movieResponse)
-                }
+                handleMovieResponse(movieResponse)
+            } catch {
+                isLoading = false
+                print(error.localizedDescription)
+            }
+            
+        case .topRated:
+            do {
+                movieResponse = try await movieService.getTopRatedMovies(page: String(currentPage))
+                handleMovieResponse(movieResponse)
             } catch {
                 isLoading = false
                 print(error.localizedDescription)

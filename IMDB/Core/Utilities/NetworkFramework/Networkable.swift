@@ -19,9 +19,9 @@ extension URLSession {
 }
 
 protocol Networkable {
-    func sendRequest<T: Decodable>(session: URLSession, endpoint: EndPoint) async throws -> T
-    func sendRequest<T: Decodable>(endpoint: EndPoint, resultHandler: @escaping (Result<T, NetworkError>) -> Void)
-    func sendRequest<T: Decodable>(endpoint: EndPoint, type: T.Type) -> AnyPublisher<T, NetworkError>
+    func sendRequest<T: Decodable>(session: URLSession, endpoint: EndPoint) async throws -> T?
+//    func sendRequest<T: Decodable>(endpoint: EndPoint, resultHandler: @escaping (Result<T, NetworkError>) -> Void)
+//    func sendRequest<T: Decodable>(endpoint: EndPoint, type: T.Type) -> AnyPublisher<T, NetworkError>
 }
 
 class NetworkManager: Networkable {
@@ -64,7 +64,7 @@ class NetworkManager: Networkable {
     }
     
     //MARK: With Combine
-    func sendRequest<T>(endpoint: EndPoint, type: T.Type) -> AnyPublisher<T, NetworkError> where T : Decodable {
+    func sendRequestWithContinuation<T>(endpoint: EndPoint, type: T.Type) -> AnyPublisher<T, NetworkError> where T : Decodable {
         guard let urlRequest = createRequest(endPoint: endpoint) else {
             precondition(false, "Failed URLRequest")
         }
@@ -89,8 +89,8 @@ class NetworkManager: Networkable {
             .eraseToAnyPublisher()
     }
     
-    //MARK: With Async & Await
-    func sendRequest<T: Decodable>(session: URLSession = .shared, endpoint: EndPoint) async throws -> T {
+    //MARK: With Continuation Async & Await
+    func sendRequestWithContinuation<T: Decodable>(session: URLSession, endpoint: EndPoint) async throws -> T {
         guard let urlRequest = endpoint.urlRequest else {
             throw NetworkError.decode(error: NetworkError.noResponse)
         }
@@ -124,6 +124,20 @@ class NetworkManager: Networkable {
                 }
             task.resume()
         }
+    }
+    
+    //MARK: With Asyc & Await
+    func sendRequest<T: Decodable>(session: URLSession, endpoint: EndPoint) async throws -> T? {
+        
+        guard let urlRequest = endpoint.urlRequest else {
+            throw NetworkError.decode(error: NetworkError.noResponse)
+        }
+        
+        let (data, response) = try await session.data(for: urlRequest)
+        guard response is HTTPURLResponse else { return nil }
+        guard let response = response as? HTTPURLResponse, 200...299 ~= response.statusCode else { return nil }
+        let decodedResponse = try JSONDecoder().decode(T.self, from: data)
+        return decodedResponse
     }
 }
 

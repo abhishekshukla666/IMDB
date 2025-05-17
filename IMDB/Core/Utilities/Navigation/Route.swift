@@ -9,15 +9,21 @@ import SwiftUI
 
 enum Route {
     case commonListView(movieListType: MovieListType)
+    case movieDetailView(movieId: Int)
 }
 
 extension Route: Hashable {
-    static func ==(lhs: Route, rhs: Route) -> Bool {
-        switch(lhs, rhs) {
-        case (.commonListView(let lhsmovieListType), .commonListView(let rhsmovieListType)):
-            return lhsmovieListType == rhsmovieListType
+    static func == (lhs: Route, rhs: Route) -> Bool {
+        switch (lhs, rhs) {
+        case (.movieDetailView(let lhsMovieId), .movieDetailView(let rhsMovieId)):
+            return lhsMovieId == rhsMovieId
+        case (.commonListView(let lhsMovieListType), .commonListView(let rhsMovieListType)):
+            return lhsMovieListType == rhsMovieListType
+        default:
+            return false
         }
     }
+    
 }
 
 extension Route: View {
@@ -25,6 +31,8 @@ extension Route: View {
         switch self {
         case .commonListView(let movieListType):
             CommonMovieListView(movieListType: movieListType)
+        case .movieDetailView(let movieId):
+            MovieDetailView(movieId: movieId)
         }
     }
 }
