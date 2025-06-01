@@ -9,15 +9,15 @@ import SwiftUI
 
 struct MovieCardView: View {
     
-    let nowPlayingMovie: Movie
+    let movie: Movie
     
     var body: some View {
-        VStack(alignment: .center) {
-            LazyAsyncImage(imageURL: nowPlayingMovie.posterPath.toString())
+        VStack(alignment: .center, spacing: 8) {
+            LazyAsyncImage(imageURL: movie.posterPath.toString())
                 .frame(width: 150, height: 225)
                 .overlay(alignment: .bottomTrailing) {
                     Text(
-                        "\(nowPlayingMovie.releaseDate.toString().toDateString(format: "dd-MMM-yyyy"))"
+                        "\(movie.releaseDate.toString().toDateString(format: "dd-MMM-yyyy"))"
                     )
                         .foregroundStyle(.white)
                         .font(.caption2)
@@ -32,12 +32,13 @@ struct MovieCardView: View {
                         .padding([.bottom, .trailing], 4)
                 }
             VStack(alignment: .leading) {
-                Text(nowPlayingMovie.title.toString())
+                Text(movie.title.toString())
                     .font(.headline)
                     .multilineTextAlignment(.leading)
-                Text(nowPlayingMovie.overview?.toString() ?? "")
+                Text(movie.overview?.toString() ?? "")
                     .font(.caption)
                     .multilineTextAlignment(.leading)
+                Spacer()
             }
         }
         
@@ -45,5 +46,5 @@ struct MovieCardView: View {
 }
 
 #Preview {
-    MovieCardView(nowPlayingMovie: Movie.sampleData_Single)
+    MovieCardView(movie: Movie.sampleData_Single)
 }

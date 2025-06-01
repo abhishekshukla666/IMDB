@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MovieResponse: Decodable {
+struct MovieResponse: Decodable, Equatable {
     let page: Int
     let movies: [Movie]
     let totalPages, totalResults: Int
@@ -21,7 +21,7 @@ struct MovieResponse: Decodable {
 }
 
 // MARK: - Result
-struct Movie: Codable, Identifiable, Hashable {
+struct Movie: Codable, Identifiable, Hashable, Equatable {
     
 //    let adult: Bool
     let backdropPath: OptionalDataType?

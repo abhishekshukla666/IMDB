@@ -217,7 +217,7 @@ extension Networkable {
     }
 }
 fileprivate extension URLRequest {
-    func debug() {
+    func printRequest() {
         print("\(self.httpMethod!) \(self.url!)")
         print("Headers:")
         print(self.allHTTPHeaderFields!)

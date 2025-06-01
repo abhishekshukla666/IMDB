@@ -16,13 +16,15 @@ struct MoviesCarousalView: View {
     let moreButtonAction: () -> Void
     
     var body: some View {
-        Section(header:
-                    header()
-        ) {
+        Section(header: header().headerProminence(.increased)) {
             ScrollView(.horizontal) {
-                LazyHStack(alignment: .top, pinnedViews: [.sectionHeaders]) {
+                LazyHStack(
+                    alignment: .top,
+                    spacing: 8,
+                    pinnedViews: [.sectionHeaders]
+                ) {
                     ForEach(movies) { movie in
-                        MovieCardView(nowPlayingMovie: movie)
+                        MovieCardView(movie: movie)
                             .frame(width: 150, height: 310)
                             .onTapGesture {
                                 navigationPath.push(.movieDetailView(movieId: movie.id))
@@ -31,7 +33,7 @@ struct MoviesCarousalView: View {
                 }
             }
             .scrollIndicators(.hidden)
-            .padding(.horizontal, 8)
+            .padding(.horizontal, 10)
         }
     }
     
@@ -40,8 +42,8 @@ struct MoviesCarousalView: View {
         HStack {
             Text(headerTitle)
                 .font(.headline)
-                .padding()
-            
+                .foregroundStyle(.white)
+
             Spacer()
             Button {
                 moreButtonAction()
@@ -49,10 +51,12 @@ struct MoviesCarousalView: View {
                 Text("More")
                     .font(.caption)
                     .fontWeight(.bold)
-                    .foregroundStyle(.link)
+                    .foregroundStyle(.white)
             }
-            .padding()
         }
+        .padding(.horizontal, 10)
+        .padding(.vertical, 8)
+        .background(apptint.opacity(0.6).gradient)
     }
 }
 

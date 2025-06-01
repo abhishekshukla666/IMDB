@@ -23,7 +23,7 @@ struct CommonMovieListView: View {
         ScrollView {
             LazyVStack {
                 ForEach(viewModel.filteredMovies, id: \.self) { movie in
-                    MovieView(movie: movie)
+                    MovieView(isFromFavorites: false, movie: movie)
                         .onAppear {
                             loadMoreIfNeeded(movie)
                         }

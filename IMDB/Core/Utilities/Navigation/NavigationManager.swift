@@ -9,17 +9,36 @@ import Foundation
 
 final class NavigationManager: ObservableObject {
     @Published var routes: [Route] = .init()
+    @Published var favRoutes: [Route] = .init()
     
-    func push(_ route: Route) {
-        routes.append(route)
+    
+    func push(_ route: Route, _ appScreen: AppScreen = .home) {
+        switch appScreen {
+        case .home:
+            routes.append(route)
+        case .favorites:
+            favRoutes.append(route)
+        }
     }
     
-    func pop() {
-        guard !routes.isEmpty else { return }
-        _ = routes.popLast()
+    func pop(_ appScreen: AppScreen = .home) {
+        switch appScreen {
+        case .home:
+            guard !routes.isEmpty else { return }
+            _ = routes.popLast()
+        case .favorites:
+            guard !favRoutes.isEmpty else { return }
+            _ = favRoutes.popLast()
+        }
+        
     }
     
-    func reset() {
-        routes.removeAll()
+    func reset(_ appScreen: AppScreen = .home) {
+        switch appScreen {
+        case .home:
+            routes.removeAll()
+        case .favorites:
+            favRoutes.removeAll()
+        }
     }
 }

@@ -15,7 +15,7 @@ struct MovieListView: View {
     var body: some View {
         NavigationStack(path: $path.routes) {
             ScrollView {
-                LazyVStack(alignment: .center, pinnedViews: [.sectionHeaders]) {
+                LazyVStack(alignment: .center, spacing: 10, pinnedViews: [.sectionHeaders]) {
                     if movieListViewModel.isLoadingNowPlayingMovies {
                         ProgressView()
                             .tint(apptint)
@@ -62,6 +62,7 @@ struct MovieListView: View {
                         !movieListViewModel.isLoadingPopularMovies &&
                         !movieListViewModel.isLoadingTopRatedMovies &&
                         !movieListViewModel.isLoadingUpcomingMovies {
+                        Spacer()
                         ContentUnavailableView("No Movies Found", systemImage: "movieclapper")
                     }
                 }
@@ -83,5 +84,6 @@ struct MovieListView: View {
 
 #Preview {
     MovieListView()
+        .environmentObject(NavigationManager())
         .environmentObject(MovieListViewModel())
 }

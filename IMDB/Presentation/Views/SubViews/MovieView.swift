@@ -11,6 +11,11 @@ import CTRating2
 struct MovieView: View {
     
     @EnvironmentObject var navigationPath: NavigationManager
+    @EnvironmentObject var favoriteVM: FavoritesMovie
+    
+    @State private var isFavorite: Bool = false
+    
+    let isFromFavorites: Bool
     let movie: Movie
     
        var body: some View {
@@ -38,6 +43,28 @@ struct MovieView: View {
                
                
                VStack(alignment: .leading, spacing: 12) {
+                   
+                   HStack {
+                       Spacer()
+                       Button {
+                           if isFavorite {
+                               favoriteVM.remove(movie)
+                           } else {
+                               favoriteVM.add(movie)
+                           }
+                           isFavorite.toggle()
+                       } label: {
+                           if isFavorite || isFromFavorites {
+                               Image(systemName: "heart.fill")
+                                   .tint(.red)
+                                   .font(.title2)
+                           } else {
+                               Image(systemName: "heart")
+                                   .tint(.red)
+                                   .font(.title2)
+                           }
+                       }
+                   }
                    Text("\(movie.title.toString())")
                        .font(.headline)
                    Text("\(movie.overview?.toString() ?? "No Overview")")
@@ -60,5 +87,6 @@ struct MovieView: View {
    }
 
 #Preview {
-    MovieView(movie: Movie.sampleData_Single)
+    MovieView(isFromFavorites: false, movie: Movie.sampleData_Single)
+        .environmentObject(FavoritesMovie())
 }

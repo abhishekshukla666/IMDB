@@ -15,7 +15,7 @@ class MovieServiceTest: XCTestCase {
     
     override func setUp() {
         
-        url = URL(string: "https://www.imdb.com/")
+        url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1&api_key=f1903be2b881067835c39fa6f8990a95")
         
         let config = URLSessionConfiguration.ephemeral
         config.protocolClasses = [MockURLProtocol.self]
@@ -28,15 +28,31 @@ class MovieServiceTest: XCTestCase {
     }
     
     func test_with_sucessfull_response_is_Valid() async throws {
-        guard let response = HTTPURLResponse(url: url, statusCode: 200, httpVersion: nil, headerFields: ["Content-Type": "application/json"]) else { return }
         
-        let jsonEncoder = JSONEncoder()
-        let data = try jsonEncoder.encode(Movie.sampleData_Multiples)
+        guard let path = Bundle.main.path(forResource: "NowPlaying1", ofType: "json"),
+              let data = FileManager.default.contents(atPath: path) else {
+            XCTFail( "File not found!" )
+            return
+        }
+        guard let response = HTTPURLResponse(url: url,
+                                             statusCode: 200,
+                                             httpVersion: nil,
+                                             headerFields: nil) else { return }
         
         MockURLProtocol.requestHandler = { request in
             return (response, data)
         }
         
-        let response = try await NetworkManager.shared.sendRequest(session: session, endpoint: IMDBEndPoint.nowPlaying(page: "1"))
+        let moviesService: MoviesServicable = MoviesService()
+        let movies = try await moviesService.getNowPlayingMovies(
+            session: session,
+            page: "1"
+        )
+        
+        let staticJSON = try JSONDecoder().decode(
+            MovieResponse.self,
+            from: data
+        )
+        XCTAssertEqual(movies, staticJSON, "The response is not equal")
     }
 }

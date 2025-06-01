@@ -20,8 +20,8 @@ final class MovieListViewModel: ObservableObject {
     @Published var isLoadingTopRatedMovies: Bool = false
     let moviesServicable: MoviesServicable
     
-    init(nowPlayingServicable: MoviesServicable = MoviesService()) {
-        self.moviesServicable = nowPlayingServicable
+    init(movieService: MoviesServicable = MoviesService()) {
+        self.moviesServicable = movieService
     }
     
     @MainActor
@@ -29,7 +29,7 @@ final class MovieListViewModel: ObservableObject {
         guard !isLoadingNowPlayingMovies else { return }
         isLoadingNowPlayingMovies = true
         do {
-            if let moviesResponse = try await self.moviesServicable.getNowPlayingMovies(page: page) {
+            if let moviesResponse = try await self.moviesServicable.getNowPlayingMovies(session: .shared, page: page) {
                 self.nowPlayingMovies = moviesResponse.movies.sortByDate()
                     
             }

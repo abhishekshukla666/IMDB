@@ -50,7 +50,11 @@ class CommonMovieListViewModel: ObservableObject {
         switch movieListType {
         case .nowPlaying:
             do {
-                movieResponse = try await movieService.getNowPlayingMovies(page: String(currentPage))
+                movieResponse = try await movieService
+                    .getNowPlayingMovies(
+                        session: .shared,
+                        page: String(currentPage)
+                    )
                 handleMovieResponse(movieResponse)
             } catch {
                 isLoading = false

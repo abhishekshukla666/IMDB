@@ -8,7 +8,7 @@
 import Foundation
 
 protocol MoviesServicable {
-    func getNowPlayingMovies(page: String) async throws -> MovieResponse?
+    func getNowPlayingMovies(session: URLSession, page: String) async throws -> MovieResponse?
     func getPopularMovies(page: String) async throws -> MovieResponse?
     func getUpcomingMovies(page: String) async throws -> MovieResponse?
     func getTopRatedMovies(page: String) async throws -> MovieResponse?
@@ -16,8 +16,12 @@ protocol MoviesServicable {
 }
 
 struct MoviesService: MoviesServicable {
-    func getNowPlayingMovies(page: String) async throws -> MovieResponse? {
-        return try await NetworkManager.shared.sendRequest(session: .shared, endpoint: IMDBEndPoint.nowPlaying(page: page))
+    func getNowPlayingMovies(session: URLSession = .shared, page: String) async throws -> MovieResponse? {
+        return try await NetworkManager.shared
+            .sendRequest(
+                session: session,
+                endpoint: IMDBEndPoint.nowPlaying(page: page)
+            )
     }
     
     func getPopularMovies(page: String) async throws -> MovieResponse? {
